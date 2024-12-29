@@ -12,7 +12,7 @@ export function CommandLine({ command, output }: CommandLineProps) {
         <span>$</span>
         <span>{command}</span>
       </div>
-      <div className="mt-4">
+      <div className="mt-4 text-gray-300">
         {output}
       </div>
     </div>

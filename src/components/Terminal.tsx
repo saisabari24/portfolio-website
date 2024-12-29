@@ -12,7 +12,7 @@ export function Terminal({ children }: TerminalProps) {
         <div className="w-3 h-3 rounded-full bg-yellow-500" />
         <div className="w-3 h-3 rounded-full bg-green-500" />
       </div>
-      <div className="p-4 font-mono">
+      <div className="p-4 font-mono text-gray-300">
         {children}
       </div>
     </div>

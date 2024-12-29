@@ -67,8 +67,8 @@ function SkillCategory({ icon, title, skills, columns = 1, minHeight = "h-auto" 
   const itemsPerColumn = Math.ceil(skills.length / columns);
   
   return (
-    <div className={`border border-gray-700 rounded-lg p-4 ${minHeight}`}>
-      <div className="flex items-center gap-2 mb-3 text-blue-400">
+    <div className={`border border-gray-200 dark:border-gray-700 rounded-lg p-4 ${minHeight}`}>
+      <div className="flex items-center gap-2 mb-3 text-blue-600 dark:text-blue-400">
         {icon}
         <h3 className="font-bold">{title}</h3>
       </div>
@@ -78,7 +78,7 @@ function SkillCategory({ icon, title, skills, columns = 1, minHeight = "h-auto" 
             {skills
               .slice(colIndex * itemsPerColumn, (colIndex + 1) * itemsPerColumn)
               .map((skill) => (
-                <li key={skill} className="text-gray-300">$ {skill}</li>
+                <li key={skill} className="text-gray-700 dark:text-gray-300">$ {skill}</li>
               ))}
           </ul>
         ))}
